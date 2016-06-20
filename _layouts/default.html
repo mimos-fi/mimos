@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% if site.github.url %}
+      <base href="{{ site.github.url }}">
+    {% endif %}
+
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <meta name="description" content="{{ page.description }}">
+    
+    <link rel="stylesheet" href="/css/main.css">
+    {% if page.css %}
+      <link rel="stylesheet" href="{{ page.css }}">
+    {% endif %}
+  </head>
+  <body>
+    <section id="nav-menu">
+      <img id="logo" src="{{ site.logo }}" alt="">
+      <ul id="nav-links">
+        <li></li>
+      </ul>
+    </section>
+    <section id="page-content">
+       {{ content }}
+    </section>
+  </body>
+</html>
