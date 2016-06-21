@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
-<section>
-  {{ site.texts | where: 'title', 'Kuvaus' }}
-</section>
+<div class="clearfix bg-color absolute below-fold">
+  <section class="col-10 mx-auto">
+    {{ site.texts | where: 'title', 'Yleiskuvaus' }}
+  </section>
+</div>

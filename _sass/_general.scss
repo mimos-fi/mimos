@@ -1,5 +1,7 @@
 html {
   box-sizing: border-box;
+  background: url(../images/cover-image.jpg) no-repeat center center fixed;
+  background-size: cover;
 }
 
 *, *:before, *:after {
@@ -9,4 +11,8 @@ html {
 ul, ol {
   list-style: none;
   padding-left: 0;
+}
+
+.below-fold {
+  top: 100vh;
 }
