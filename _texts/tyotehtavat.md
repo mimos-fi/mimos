@@ -1,7 +1,6 @@
 ---
 ---
 ### Työtehtäviimme kuuluvat:
-
 * sisä- ja ulkomaalaustyöt
 * koristemaalaus ja ootraus sekä marmorointi
 * tapetointi

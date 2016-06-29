@@ -16,12 +16,15 @@
     {% endif %}
   </head>
   <body>
-    <section id="nav-menu">
-      <img id="logo" src="{{ site.logo }}" alt="">
-      <ul id="nav-links">
-        <li></li>
+    <nav class="flex justify-center">
+      <ul id="nav-links" class="nav-list flex flex-wrap relative">
+        {% for page in site.html_pages %}
+          <li class="menu-item">
+            <a class="menu-link" href="{{ page.url }}">{{ page.title }}</a>
+          </li>
+        {% endfor %}
       </ul>
-    </section>
+    </nav>
     {{ content }}
   </body>
 </html>
