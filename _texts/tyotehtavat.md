@@ -1,4 +1,6 @@
 ---
+order: 2
+title: Työtehtävät
 ---
 ### Työtehtäviimme kuuluvat:
 * sisä- ja ulkomaalaustyöt

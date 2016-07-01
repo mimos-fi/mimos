@@ -1,8 +1,10 @@
-$nav-bg-color: #2a282b;
-$nav-highlight-color: #d94f5c;
-$nav-text-color: #929292;
+@import "variables";
+$nav-bg-color: $primary-color;
+$nav-highlight-color: $bg-color;
+$nav-text-color: $bg-color;
 $nav-hover-color: #fff;
 $nav-transition-time: 0.4s;
+$border-width: 3px;
 
 .nav-list {
   background-color: $nav-bg-color;
@@ -34,7 +36,6 @@ $nav-transition-time: 0.4s;
   color: $nav-hover-color;
 }
 
-/* Viola */
 .menu-item {
 	position: relative;
 	margin: 0 1em;
@@ -61,7 +62,7 @@ $nav-transition-time: 0.4s;
 .menu-item::before,
 .menu-item::after {
 	top: 0;
-	width: 2px;
+	width: $border-width;
 	height: 100%;
 	transform: scale3d(1, 0, 1);
 }
@@ -80,7 +81,7 @@ $nav-transition-time: 0.4s;
 .menu-link::after {
 	left: 0;
 	width: 100%;
-	height: 2px;
+	height: $border-width;
 	transform: scale3d(0, 1, 1);
 }
 

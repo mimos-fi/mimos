@@ -1,5 +1,17 @@
-$bg-color: #f0f0f0;
+@import "variables";
 
 .bg-color {
   background-color: $bg-color;
+}
+
+.primary-bg-color {
+  background-color: $primary-color;
+}
+
+.primary-color {
+  color: $primary-color;
+}
+
+.secondary-color {
+  background-color: $secondary-color;
 }

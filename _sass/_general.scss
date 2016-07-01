@@ -1,3 +1,5 @@
+@import "variables";
+
 html {
   box-sizing: border-box;
   background: url(../images/cover-image.jpg) no-repeat center center fixed;
@@ -14,5 +16,26 @@ ul, ol {
 }
 
 .below-fold {
-  top: 100vh;
+  top: 75vh;
+}
+
+.center-vertical {
+  top: 33vh;
+}
+
+.title-logo {
+  font-size: 4em;
+}
+
+.max-50 {
+  max-width: 50%;
+}
+
+.header {
+  font-family: 'Limelight', cursive;
+}
+
+.blur {
+  background: url(../images/cover-image_blur.jpg) no-repeat center center fixed;
+  background-size: cover;
 }

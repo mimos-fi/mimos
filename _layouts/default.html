@@ -11,13 +11,14 @@
     <meta name="description" content="{{ page.description }}">
     
     <link rel="stylesheet" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Limelight" rel="stylesheet">
     {% if page.css %}
       <link rel="stylesheet" href="{{ page.css }}">
     {% endif %}
   </head>
   <body>
-    <nav class="flex justify-center">
-      <ul id="nav-links" class="nav-list flex flex-wrap relative">
+    <nav class="fixed z2 flex justify-center col-12">
+      <ul id="nav-links" class="nav-list m1 flex flex-wrap">
         {% for page in site.html_pages %}
           <li class="menu-item">
             <a class="menu-link" href="{{ page.url }}">{{ page.title }}</a>

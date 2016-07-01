@@ -2,8 +2,24 @@
 layout: default
 title: Etusivu
 ---
-<div class="clearfix bg-color absolute below-fold">
-  <section class="col-10 mx-auto">
-    {{ site.texts | where: 'title', 'Yleiskuvaus' }}
-  </section>
+<div class="absolute center-vertical flex col-12">
+  <div style="width: 60px"></div>
+  <h1 class="title-logo header primary-color p1 m0">MIMOS Oy</h1>
+</div>
+<div class="clearfix blur absolute below-fold">
+  {% assign texts = site.texts | sort: 'order' %}
+  {% for text in texts %}
+    <section>
+      <div class="flex">
+        <span class=" primary-bg-color" style="width: 60px"></span>
+        <h2 class="primary-color header caps mx2 mt2 mb1">{{ text.title }}</h2>
+      </div>
+      <div class="flex">
+        <div style="width: 60px"></div>
+        <div class="mx2 mb4 col-8">
+          {{ text }}
+        </div>
+      </div>
+    </section>
+  {% endfor %}
 </div>

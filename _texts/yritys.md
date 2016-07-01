@@ -1,6 +1,7 @@
 ---
+order: 4
 ---
-Restaurointimaalaus MIMOS Oy –Riitta Karjalainen
+#### Restaurointimaalaus MIMOS Oy –Riitta Karjalainen
 
 Yritys on perustettu vuonna 2011. Yritys sai alkunsa kiinnostuksesta vanhoihin rakennuksiin ja niiden
 kunnostamiseen vanhaa rakennustapaa ja perinnettä noudattaen. Ennen yrityksen perustamista on
