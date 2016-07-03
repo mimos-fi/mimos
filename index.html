@@ -1,25 +1,44 @@
 ---
-layout: default
-title: Etusivu
+description: >
+  Restaurointimaalaus MIMOS Oy tarjoaa laadukasta ja
+  ammattitaitoista restauroinnin ja pintakäsittelyn
+  kokonaispalveluja.
 ---
-<div class="absolute center-vertical flex col-12">
-  <div style="width: 60px"></div>
-  <h1 class="title-logo header primary-color p1 m0">MIMOS Oy</h1>
-</div>
-<div class="clearfix blur absolute below-fold">
-  {% assign texts = site.texts | sort: 'order' %}
-  {% for text in texts %}
-    <section>
-      <div class="flex">
-        <span class=" primary-bg-color" style="width: 60px"></span>
-        <h2 class="primary-color header caps mx2 mt2 mb1">{{ text.title }}</h2>
-      </div>
-      <div class="flex">
-        <div style="width: 60px"></div>
-        <div class="mx2 mb4 col-8">
-          {{ text }}
-        </div>
-      </div>
-    </section>
-  {% endfor %}
-</div>
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>MIMOS Oy - Restaurointimaalaus</title>
+    <meta name="description" content="{{ page.description }}">
+    
+    <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.github.url }}">
+    <link href="https://fonts.googleapis.com/css?family=Limelight" rel="stylesheet">
+    {% if page.css %}
+      <link rel="stylesheet" href="{{ page.css | prepend: site.github.url }}">
+    {% endif %}
+  </head>
+  <body>
+    <div class="absolute top37 flex justify-center col-12">
+      <h1 class="title-logo primary-color p1 m0">Restaurointimaalaus MIMOS Oy</h1>
+    </div>
+    <div class="clearfix blur absolute below-fold">
+      {% assign texts = site.texts | sort: 'order' %}
+      {% for text in texts %}
+        <section>
+          <div class="flex">
+            <span class=" primary-bg-color" style="width: 60px"></span>
+            <h2 class="primary-color caps mx2 mt2 mb1">{{ text.title }}</h2>
+          </div>
+          <div class="flex">
+            <div style="width: 60px"></div>
+            <div class="mx2 mb4 col-8">
+              {{ text }}
+            </div>
+          </div>
+        </section>
+      {% endfor %}
+    </div>
+  </body>
+</html>

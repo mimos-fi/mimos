@@ -19,19 +19,18 @@ ul, ol {
   top: 75vh;
 }
 
-.center-vertical {
-  top: 33vh;
+.top37 {
+  top: 37vh;
+  transform: translate(0, -50%);
 }
 
 .title-logo {
   font-size: 4em;
+  width: 13em;
+  text-align: center;
 }
 
-.max-50 {
-  max-width: 50%;
-}
-
-.header {
+h1, h2 {
   font-family: 'Limelight', cursive;
 }
 
