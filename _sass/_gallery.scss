@@ -1,0 +1,14 @@
+.gallery-img {
+  width: 500px;
+  height: 500px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.gallery-img img {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}

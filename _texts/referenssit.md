@@ -1,5 +1,5 @@
 ---
-order: 5
+order: 6
 ---
 ### Suomenlinnan rakennusten restaurointi ja konservointityöt sekä väritutkimukset vuodesta 2002 -
 
