@@ -23,7 +23,7 @@ description: >
   <body class="blur">
     
     <!--front page-->
-    <a class="m2" href="/">Etusivu</a>
+    <a class="m2" href="{{ site.github.url }}/">Etusivu</a>
     
     <!--gallery-->
     <section class="flex flex-wrap">
@@ -33,7 +33,7 @@ description: >
       <!--individual image-->
       <div class="gallery-img m2" style="background-image: url('{{ image.path | prepend: site.github.url }}');">
         <a href="{{ image.path | prepend: site.github.url }}">
-          <img src="{{ image.path | prepend: site.github.url }}" alt="">
+          <img width="400px" height="400px" src="{{ image.path | prepend: site.github.url }}" alt="">
         </a>
       </div>
       {% endif %}
