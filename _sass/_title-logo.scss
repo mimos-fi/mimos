@@ -1,0 +1,31 @@
+.title-logo h1 {
+  font-size: 2.3em;
+  cursor: default;
+  text-shadow:
+  -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 52em) {
+  .title-logo {
+    top: 37vh;
+    transform: translate(0, -50%);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .title-logo h1 {
+    font-size: 4em;
+    max-width: 13em;
+    text-align: center;
+  }
+}

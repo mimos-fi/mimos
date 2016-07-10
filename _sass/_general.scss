@@ -2,7 +2,7 @@
 
 html {
   box-sizing: border-box;
-  background: url(../images/kansikuva.jpg) no-repeat center center fixed;
+  background: url(../kansikuva/normal.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -20,29 +20,7 @@ ul, ol {
 }
 
 .below-fold {
-  top: 75vh;
-}
-
-.top37 {
-  top: 37vh;
-  transform: translate(0, -50%);
-}
-
-.title-logo {
-  font-size: 4em;
-  width: 13em;
-  text-align: center;
-  cursor: default;
-  text-shadow:
-   -1px -1px 0 #000,  
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000;
-  -webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-  -khtml-user-select: none;
-	user-select: none;
+  top: 40vh;
 }
 
 h1, h2 {
@@ -50,6 +28,16 @@ h1, h2 {
 }
 
 .blur {
-  background: url(../images/kansikuva_blur.jpg) no-repeat center center fixed;
+  background: url(../kansikuva/blur.jpg) no-repeat center center fixed;
   background-size: cover;
+}
+
+@media (min-width: 52em) {
+  .left-margin {
+    width: 60px;
+  }
+  
+  .below-fold {
+    top: 75vh;
+  }
 }

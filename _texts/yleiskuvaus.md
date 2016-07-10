@@ -1,6 +1,6 @@
 ---
 order: 1
-title: Kulttuurihistoriallisia arvoja ja vanhaa rakennustapaa kunnioittaen
+title: Kulttuuri&shy;historiallisia arvoja ja vanhaa rakennustapaa kunnioittaen
 ---
 Restaurointimaalaus MIMOS Oy tarjoaa laadukasta ja ammattitaitoista restauroinnin ja pintakäsittelyn
 kokonaispalveluja. Perusperiaatteemme on kunnostaa kohteita perinteisin menetelmin ja perinteisiä
