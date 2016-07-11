@@ -2,11 +2,7 @@
 order: 5
 ---
 <div class="flex flex-wrap">
-  <div class="gallery-img m2" style="background-image: url('{{ '/images/tyoskentely.jpg' | prepend: site.github.url }}');">
-    <img width="400px" height="400px" src="{{ '/images/tyoskentely.jpg' | prepend: site.github.url }}" alt="Restaurointi työskentelyä">
-  </div>
-  <div class="gallery-img m2" style="background-image: url('{{ '/images/kapteeninkatu_tammiovet.jpg' | prepend: site.github.url }}');">
-    <img width="400px" height="400px" src="{{ '/images/kapteeninkatu_tammiovet.jpg' | prepend: site.github.url }}" alt="Restaurointikohde">
-  </div>
+  {% include image.html path='/images/tyoskentely.jpg' alt='Restaurointi työskentelyä' %}
+  {% include image.html path='/images/kapteeninkatu-tammiovet.jpg' alt='Restaurointikohde' %}
 </div>
-<p>Lisää kuvia <a href="kuvat">kuvagalleriassa</a> </p>
+<p>Lisää kuvia <a href="kuvat">kuvagalleriassa</a></p>

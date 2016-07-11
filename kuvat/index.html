@@ -30,12 +30,10 @@ description: >
     {% for image in site.static_files %}
       {% assign folder = image.path | split:'/' %}
       {% if folder[1] == 'images' %}
-      <!--individual image-->
-      <div class="gallery-img m2" style="background-image: url('{{ image.path | prepend: site.github.url }}');">
-        <a href="{{ image.path | prepend: site.github.url }}">
-          <img width="400px" height="400px" src="{{ image.path | prepend: site.github.url }}" alt="">
-        </a>
-      </div>
+      {% unless image.path contains '-min.jpg' %}
+        <!--individual image-->
+        {% include image.html path=image.path %}
+      {% endunless %}
       {% endif %}
     {% endfor %}
     </section>

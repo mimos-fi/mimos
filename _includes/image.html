@@ -1,0 +1,8 @@
+{% assign full_path = include.path | prepend: site.github.url %}
+{% assign min_path = include.path | prepend: site.github.url | replace: '.jpg', '-min.jpg' %}
+
+<div class="gallery-img m2" style="background-image: url('{{ min_path }}');">
+  <a style="width: 100%; height: 100%;" href="{{ full_path }}">
+    <img width="400px" height="400px" src="{{ min_path }}" alt="{{ include.alt }}">
+  </a>
+</div>
