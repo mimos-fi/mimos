@@ -14,10 +14,17 @@ description: >
     <title>MIMOS Oy - Restaurointimaalaus</title>
     <meta name="description" content="{{ page.description }}">
     
-    <!--stylesheets-->
-    <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.github.url }}">
+    <!--fonts-->
     <link href="https://fonts.googleapis.com/css?family=Limelight|Corben" rel="stylesheet">
-    
+
+    <!--styles-->
+    {% capture styles %}
+      {% include styles.scss %}
+    {% endcapture %}
+    <style>
+      {{ styles | scssify }}
+    </style>
+
   </head>
   
   <body>

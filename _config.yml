@@ -23,3 +23,6 @@ markdown: kramdown
 collections:
   texts:
     output: false
+
+sass:
+  style: compressed
