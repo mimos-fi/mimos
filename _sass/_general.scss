@@ -3,7 +3,8 @@
 html {
   box-sizing: border-box;
   background-color: #a66958;
-  background: url(../kansikuva/normal.jpg) no-repeat center center fixed;
+  //add with javascript
+  //background: url(../kansikuva/normal.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -29,7 +30,9 @@ h1, h2 {
 }
 
 .blur {
-  background: url(../kansikuva/blur.jpg) no-repeat center center fixed;
+  background-color: #d0b0a7;
+  //add with javascript
+  //background: url(../kansikuva/blur.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
