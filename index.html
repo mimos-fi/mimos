@@ -13,13 +13,11 @@ description: >
     
     <title>MIMOS Oy - Restaurointimaalaus</title>
     <meta name="description" content="{{ page.description }}">
-    
-    <!--fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Limelight|Corben" rel="stylesheet">
 
     <!--styles-->
     {% capture styles %}
       {% include styles.scss %}
+      {% include fonts.css %}
     {% endcapture %}
     <style>
       {{ styles | scssify }}
