@@ -7,45 +7,39 @@ description: >
 <!DOCTYPE html>
 <html lang="fi">
   <head>
-    
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <title>MIMOS Oy - Restaurointimaalaus</title>
     <meta name="description" content="{{ page.description }}">
 
     <!--styles-->
-    {% capture styles %}
-      {% include styles.scss %}
-      {% include fonts.css %}
-    {% endcapture %}
     <style>
-      {{ styles | scssify }}
+      {% include styles.scss %}
     </style>
 
-    <script async src="{{ '/scripts/bg-image.js' | prepend: site.github.url }}"></script>
-
   </head>
-  
+
   <body>
-    
+
     <!--logo-->
     <div class="title-logo">
       <h1 class=" primary-color p1 m0">Restaurointi&shy;maalaus MIMOS&nbsp;Oy</h1>
     </div>
-    
+
     <!--main content-->
     <div class="clearfix blur absolute below-fold">
       {% assign texts = site.texts | sort: 'order' %}
       {% for text in texts %}
-      
+
         <section>
           <!--section header-->
           <div class="flex">
             <span class=" primary-bg-color left-margin"></span>
             <h2 class="primary-color caps mx2 mt2 mb1">{{ text.title }}</h2>
           </div>
-          
+
           <!--section body-->
           <div class="flex">
             <div class="left-margin"></div>
@@ -53,11 +47,11 @@ description: >
               {{ text }}
             </div>
           </div>
-          
+
         </section>
-        
+
       {% endfor %}
     </div>
-    
+
   </body>
 </html>

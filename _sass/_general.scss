@@ -1,10 +1,7 @@
-@import "variables";
-
 html {
   box-sizing: border-box;
   background-color: #a66958;
-  //add with javascript
-  //background: url(../kansikuva/normal.jpg) no-repeat center center fixed;
+  background: url(../kansikuva/normal.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -35,16 +32,15 @@ h1, h2 {
 
 .blur {
   background-color: #d0b0a7;
-  //add with javascript
-  //background: url(../kansikuva/blur.jpg) no-repeat center center fixed;
+  background: url(../kansikuva/blur.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
-@media (min-width: 52em) {
+@media screen and (min-width: 52em) {
   .left-margin {
     width: 60px;
   }
-  
+
   .below-fold {
     top: 75vh;
   }
