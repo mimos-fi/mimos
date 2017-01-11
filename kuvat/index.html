@@ -7,31 +7,23 @@ description: >
 <!DOCTYPE html>
 <html lang="fi">
   <head>
-    
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <title>MIMOS Oy - Restaurointimaalaus</title>
     <meta name="description" content="{{ page.description }}">
 
     <!--styles-->
-    {% capture styles %}
-      {% include styles.scss %}
-      {% include fonts.css %}
-    {% endcapture %}
-    <style>
-      {{ styles | scssify }}
-    </style>
-    
-    <script async src="{{ '/scripts/bg-image.js' | prepend: site.github.url }}"></script>
+    <link rel="stylesheet" href="{{ '/css/styles.css' | prepend: site.github.url }}">
 
   </head>
-  
+
   <body class="blur">
-    
+
     <!--front page-->
     <a class="m2" href="{{ site.github.url }}/">Etusivu</a>
-    
+
     <!--gallery-->
     <section class="flex flex-wrap">
     {% for image in site.static_files %}
@@ -44,6 +36,6 @@ description: >
       {% endif %}
     {% endfor %}
     </section>
-    
+
   </body>
 </html>
