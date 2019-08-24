@@ -11,5 +11,5 @@ order: 7
 
 #### Laskutus
 * Restaurointimaalaus MIMOS Oy
-* Voudintie 4 D 71
-* 00600 Helsinki
+* Riikantie 17
+* 09810 Nummi
